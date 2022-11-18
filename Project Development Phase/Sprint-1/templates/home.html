@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block body%}
+<style>
+    body {
+      background-image: url('https://softwareauggest-blogimages.s3.ca-central-1.amazonaws.com/blog/wp-content/uploads/2016/02/14191055/9-Top-Retail-Inventory-Management-Software-for-SMEs-in-India-1068x578.png');
+    }
+    </style><br><br>
+<div class="jumbotron mt-4">
+    <h7 class="display-4">Inventory Management System for Retailers</h7><br><br>
+    {% if session.logged_in == NULL %}
+        <center><a href="/register" class="btn btn-primary btn-lg">Register</a>
+        <a href="/login" class="btn btn-success btn-lg">Login</a></center>
+    {% endif %}<br>
+    <center><h5>Created By: Dwaraka kavyasudha, Obul Reddy , Mvs Charan , Sai Lakshmi</h5><center>
+</div>
+{% endblock %}
